@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cuentas"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@color/colorNumeros"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@color/colorNumeros"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/memBorrar"
+                style="@style/numeros"
+                android:onClick="memory"
+                android:text="MC" />
+
+            <Button
+                android:id="@+id/memSumar"
+                style="@style/numeros"
+                android:onClick="memory"
+                android:text="M+" />
+
+            <Button
+                android:id="@+id/memMostrar"
+                style="@style/numeros"
+                android:onClick="memory"
+                android:text="MR" />
+
+
+            <Button
+                android:id="@+id/dividir"
+                style="@style/operadores"
+                android:onClick="clickOperador"
+                android:text="/" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/siete"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/ocho"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/nueve"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/multiplicar"
+                style="@style/operadores"
+                android:onClick="clickOperador"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/cuatro"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/cinco"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/seis"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/resta"
+                style="@style/operadores"
+                android:onClick="clickOperador"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/uno"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/dos"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/tres"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/suma"
+                style="@style/operadores"
+                android:onClick="clickOperador"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/punto"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="." />
+
+            <Button
+                android:id="@+id/cero"
+                style="@style/numeros"
+                android:onClick="clickNumero"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/borrar"
+                style="@style/numeros"
+                android:onClick="borrar"
+                android:text="CE"/>
+
+            <Button
+                android:id="@+id/igual"
+                style="@style/operadores"
+                android:onClick="clickOperador"
+                android:text="=" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
